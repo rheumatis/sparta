@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <title>양초</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+  <style>
+    .mytitle {
+      color: white;
+      text-align: center;
+      background-image: url(./candle.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 400px;
+      height: 250px;
+
+      /* display flex를 쓸 때엔 아래 네 줄이 항상 묶여 다닙니다. */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrap {
+      width: 400px;
+      margin: 50px auto 0 auto;
+    }
+
+    .candle {
+      color: blue;
+      font-size: 30pt;
+      font-weight: bold;
+    }
+
+    .candleprice {
+      color: red;
+      font-size: 20pt;
+    }
+
+    * {
+      font-family: 'Nanum Pen Script', cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="mytitle"> </div>
+    <p>
+      <div class="candle">
+        <p>양초를 팝니다 <span class="candleprice">가격:30,000원/개</span></p>
+      </div>
+      <div class="main">
+        <p>이 양초는 천연재로로 만들어진 것이며 강원도의 자연환경에서 가져온 좋은 재료로 만들었어요. 사실 특별한 향을 갖고있어서 소원을 빌면 뭐든지 이루이진대요. 하나 사가세요. 대나무 향이 아주 좋아요.
+        </p>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">주문자이름</span>
+        </div>
+        <input type="text" class="form-control1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">수량</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>--수량을 선택하세요--</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon2">주소</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">전화번호</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+      <div style="text-align: center">
+        <input class="btn btn-primary" type="submit" value="주문하기">
+      </div>
+  </div>
+</body>
+
+</html>
